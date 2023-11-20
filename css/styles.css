@@ -1,0 +1,55 @@
+body {
+  background: linear-gradient(90deg, rgb(245, 204, 81) 0%, rgb(248, 151, 109) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-holder {
+  padding: 40px 0;
+  background-color: white;
+  border-radius: 7px;
+  width: 800px;
+  max-width: 80%;
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-item {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.carousel-inner {
+  display: flex;
+}
+.carousel-inner .carousel-item .quote span {
+  color: orange;
+  font-size: 62px;
+  line-height: 0;
+  position: relative;
+  bottom: -32px;
+  font-family: sans-serif;
+  margin-right: 10px;
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+  filter: invert(1);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: grey;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-size: 15px;
+  color: grey;
+}/*# sourceMappingURL=styles.css.map */

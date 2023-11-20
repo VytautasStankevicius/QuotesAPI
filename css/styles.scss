@@ -1,0 +1,61 @@
+body {
+	background: linear-gradient(90deg, rgb(245, 204, 81) 0%, rgb(248, 151, 109) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-holder{
+    padding: 40px 0;
+		background-color: white;
+		border-radius: 7px;
+    width:800px;
+    max-width: 80%;
+}
+
+.carousel-indicators {
+	bottom: -50px;
+}
+
+.carousel-item {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.carousel-inner {
+  display:flex;
+  .carousel-item {
+    .quote {
+      span {
+        color: orange;
+        font-size: 62px;
+        line-height: 0;
+        position: relative;
+        bottom: -32px;
+        font-family: sans-serif;
+        // font-family: fangsong;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.carousel-control-prev span, .carousel-control-next span {
+    filter: invert(1);            //keicia spalva is baltos i juoda ir atvirksciai, kitaip nekeicai spalvos nes bootstrap naudoja svg img
+}
+
+.carousel-indicators [data-bs-target] {  //boostrap specifinis,kitaip nekeicia
+  // filter: invert(1);
+  background-color:grey;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-size:15px;
+  color:grey;
+}
